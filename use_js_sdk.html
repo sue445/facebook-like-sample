@@ -7,10 +7,12 @@
   </head>
   <body>
 
+    <!--
     <ul>
       <li><a href="javascript:void(0);" id="fb-login">login</a></li>
       <li><a href="javascript:void(0);" id="fb-logout">logout</a></li>
     </ul>
+    -->
 
     <div id="fb-root"></div>
     <script>
@@ -43,7 +45,8 @@
          ref.parentNode.insertBefore(js, ref);
        }(document, /*debug*/ false));
 
-      $(document).ready(function(){
+       /*
+       $(document).ready(function(){
           $("#fb-login").click(function(){
             FB.login(function(response) {
               if (response.authResponse) {
@@ -62,9 +65,11 @@
               alert("logout");
             });
           });
-      });
+        });
+        */
     </script>
 
+    like drecom
     <fb:like send="true" width="450" show_faces="true" href="https://www.facebook.com/drecom.co.jp" />
   </body>
 
