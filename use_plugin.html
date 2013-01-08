@@ -16,6 +16,18 @@
 
     <div class="fb-like" data-href="http://sue445.github.com/facebook-like-sample/" data-send="false" data-layout="box_count" data-width="200" data-show-faces="false" data-colorscheme="dark"></div>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+  (function($){
+    $(document).ready(function(){
+      FB.Event.subscribe('edge.create', function(response) {
+        // Likeが押された時に実行される
+        alert("liked!");
+      });
+    });
+  })(jQuery);
+</script>
+
   </body>
 
 </html>
